@@ -229,6 +229,18 @@
             font-size: 20px;
         }
     }
+
+        .vcard-section {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.vcard-section > div:first-child {
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+    
 </style>
 </head>
 <body>
@@ -263,11 +275,14 @@
                     <button class="copy-btn" onclick="copyToClipboard()">Copy Account Number</button>
                 </div>
                 <!-- Added Vcard Section -->
-                <div class="account-row" style="margin-top: 15px;">
-                    <span id="vcardNum">Norsitadewi 8166190</span>
+            <div class="vcard-section">
+                <div>Norsitadewi</div>
+                <div class="account-row" style="margin-top: 8px;">
+                    <span id="vcardNum">8166190</span>
                     <button class="copy-btn" onclick="copyVcardNumber()">Copy Vcard Number</button>
                 </div>
             </div>
+        </div>
 
             <form id="paymentForm">
                 <input type="hidden" id="branchPhone">
